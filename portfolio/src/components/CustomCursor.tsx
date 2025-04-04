@@ -20,7 +20,7 @@ const CustomCursor = () => {
   const onMouseLeave = useCallback(() => setIsVisible(false), []);
 
   // Animation loop using requestAnimationFrame
-  const animateCursor = useCallback((time: number) => {
+  const animateCursor = useCallback(() => {
     if (!cursorDotRef.current || !cursorOutlineRef.current) return;
     
     // Update cursor positions directly with current mouse position
