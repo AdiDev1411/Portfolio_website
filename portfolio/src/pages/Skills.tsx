@@ -156,7 +156,6 @@ const Skills = () => {
                     whileHover={{ scale: 1.05, y: -5 }}
                     whileTap={{ scale: 0.95 }}
                     animate={activeSkill === skill.name ? "floating" : {}}
-                    variants={floatingAnimation}
                     onHoverStart={() => setActiveSkill(skill.name)}
                     onHoverEnd={() => setActiveSkill(null)}
                     className="bg-dark p-4 rounded-xl glass glow-sm flex flex-col items-center text-center transform transition-all duration-300"
@@ -182,7 +181,7 @@ const Skills = () => {
                     whileHover={{ scale: 1.05, y: -5 }}
                     whileTap={{ scale: 0.95 }}
                     animate={activeSkill === skill.name ? "floating" : {}}
-                    variants={floatingAnimation}
+                    
                     onHoverStart={() => setActiveSkill(skill.name)}
                     onHoverEnd={() => setActiveSkill(null)}
                     className="bg-dark p-4 rounded-xl glass glow-sm flex flex-col items-center text-center transform transition-all duration-300"
@@ -244,7 +243,7 @@ const Skills = () => {
         </motion.div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .bg-grid-pattern {
           background-image: radial-gradient(circle, rgba(108, 99, 255, 0.1) 1px, transparent 1px);
           background-size: 30px 30px;
