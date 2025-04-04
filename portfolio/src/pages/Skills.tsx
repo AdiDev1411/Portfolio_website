@@ -68,16 +68,7 @@ const Skills = () => {
   };
 
   // New floating animation for skill items
-  const floatingAnimation = {
-    floating: {
-      y: [0, -10, 0],
-      transition: {
-        duration: 3,
-        ease: "easeInOut",
-        repeat: Infinity,
-      }
-    }
-  };
+ 
 
   return (
     <section id="skills" className="py-20 min-h-screen flex items-center bg-gradient-dark relative overflow-hidden">
